@@ -45,8 +45,9 @@ async function getJokes(){
             joke = data.joke;
         }
         // disable button
-        toggleButton();
+        
         tellMe(joke)
+        toggleButton();
     }catch(error){
 //    catch errors
 console.log('whoops', error)
